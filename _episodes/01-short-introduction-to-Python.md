@@ -440,6 +440,24 @@ for key in rev.keys():
 {: .challenge}
 
 
+> ## Putting it together: data structures
+>
+> For the following practical examples write down whether you would use a tuple, list, or dictionary to represent the data.
+> 1. Storing the favorite food of the people in your class when later we need to be able to answer: what is `name`'s favorite food?
+> 2. A point in 2D space (i.e. with x and y coordinate)
+> 3. The names of people in this class
+> 4. (optional) The age and weight of people in your class, so we can later ask what is `name`'s age and weight?
+>
+> > ## Solution
+> > For all questions, there are different possible solutions and sometimes the usefullness of a solution depends on the context.
+> > Example solutions are::
+> > 1. A dict: `favorite_foods = {'john': 'omelet', 'mary': 'pizza'}`
+> > 2. A tuple makes more sense than a list, because coordinates of a point do not change: `my_location = (53, 5)`
+> > 3. A list: `names = ['john', 'mary']`
+> > 4. A dict of tuples: `ages_and_weights = {'john': (35, 80), 'mary': (45, 70)}`
+> {: .solution}
+{: .challenge}
+
 ## Functions
 
 Defining a section of code as a **function** in Python is done using the `def`
@@ -461,4 +479,3 @@ print(z)
 {: .output}
 
 {% include links.md %}
-
