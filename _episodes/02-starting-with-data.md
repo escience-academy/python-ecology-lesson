@@ -590,7 +590,7 @@ total_count.plot(kind='bar');
 > being sex. The plot should show total weight by sex for each site. Some
 > tips are below to help you solve this challenge:
 >
-> * Note that you need to group on TWO columns now (as opposed to one column in the previous question)
+> * Note that you need to group on two columns now (as opposed to one column in the previous question)
 > * You can use the `.unstack()` method to transform grouped data into columns
 > for each plotting.  Try running `.unstack()` on the grouped dataframe to see what it yields.
 > * For more information on pandas plots, see [pandas' documentation page on visualization][pandas-plot].

@@ -118,7 +118,7 @@ the related Python data type dictionary).
 > the names of built-in data structures and methods. For example, a _list_ is a built-in
 > data type. It is possible to use the word 'list' as an identifier for a new object,
 > for example `list = ['apples', 'oranges', 'bananas']`. However, you would then
-> be unable to create an empty list using `list()` or convert a tuple to a 
+> be unable to create an empty list using `list()` or convert a tuple to a
 > list using `list(sometuple)`.
 {: .callout}
 
@@ -447,8 +447,8 @@ Experiment with selecting various subsets of the "surveys" data.
 >    ~~~
 >    {: .language-python }
 >
->   Use the `isin` function to find all plots that contain particular species
->   in the "surveys" DataFrame. How many records contain these values?
+>   Use the `isin` function to select records of `PB` with `PL` species
+>   in the "surveys" DataFrame. Derive the plot_ids of the plots that contain these species.
 >
 > 3. Experiment with other queries. Create a query that finds all rows with a
 >   weight value > or equal to 0.
@@ -546,7 +546,8 @@ asking Python to select rows that have a `NaN` value of weight.
 >
 > 1. Create a new DataFrame that only contains observations with sex values that
 >   are **not** female or male. Assign each sex value in the new DataFrame to a
->   new value of 'x'. Determine the number of null values in the subset.
+>   new value of 'x'. Verify that the sex column in the new subset does not
+>  contain missing values.
 >
 > 2. Create a new DataFrame that contains only observations that are of sex male
 >   or female and where weight values are greater than 0. Create a stacked bar
