@@ -294,7 +294,15 @@ AND the file name itself.
 >
 > 2. Let's say you only want to look at data from a given multiple of years. How would you modify your loop in order to generate a data file for only every 5th year, starting from 1977?
 >
+> HINT: the python built-in function `range` lets you loop over a range of numbers, try for example:
+> ~~~
+> for num in range(10, 20, 2):
+>     print(num)
+> ~~~
+> {: .language-python}
+>
 > 3. Instead of splitting out the data by years, a colleague wants to do analyses each species separately. How would you write a unique CSV file for each species?
+> 
 {: .challenge}
 
 ## Building reusable and modular code with functions
@@ -693,4 +701,3 @@ One keyword, default start:	1977 1993
 {: .challenge}
 
 {% include links.md %}
-
