@@ -447,7 +447,7 @@ Experiment with selecting various subsets of the "surveys" data.
 >    ~~~
 >    {: .language-python }
 >
->   Use the `isin` function to select records of `PB` with `PL` species
+>   Use the `isin` function to select only records of `PB` or `PL` species
 >   in the "surveys" DataFrame. Derive the plot_ids of the plots that contain these species.
 >
 > 3. Experiment with other queries. Create a query that finds all rows with a
