@@ -405,7 +405,7 @@ The pandas `merge` function supports two other join types:
 > ## Challenge - Distributions
 > Create a new DataFrame by joining the contents of the `surveys.csv` and
 > `species.csv` tables. Then calculate and plot for each plot_id, the distribution
-> of observations over the different taxa.
+> of the number of observations belonging to the different taxa.
 {: .challenge}
 
 > ## Challenge - Diversity Index
