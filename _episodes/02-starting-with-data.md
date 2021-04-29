@@ -580,7 +580,7 @@ total_count.plot(kind='bar');
 
 > ## Challenge - Plots
 >
-> 1. Create a plot of average weight across all species per site.
+> 1. Create a plot of average weight of the animals per site.
 > 2. Create a plot of total males versus total females for the entire dataset.
 {: .challenge}
 
@@ -590,9 +590,13 @@ total_count.plot(kind='bar');
 > being sex. The plot should show total weight by sex for each site. Some
 > tips are below to help you solve this challenge:
 >
+> * Note that you need to group on two columns now (as opposed to one column in the previous question)
+> * You can use the `.unstack()` method to transform grouped data into columns
+> for each plotting.  Try running `.unstack()` on the grouped dataframe to see what it yields.
 > * For more information on pandas plots, see [pandas' documentation page on visualization][pandas-plot].
-> * You can use the code that follows to create a stacked bar plot but the data to stack
->  need to be in individual columns.  Here's a simple example with some data where
+>
+> Here is an example of what the plot should look like on a small artificial dataset:
+> In this example, we have grouped data where
 >  'a', 'b', and 'c' are the groups, and 'one' and 'two' are the subgroups.
 >
 > ~~~
@@ -623,9 +627,7 @@ total_count.plot(kind='bar');
 >
 > ![Stacked Bar Plot](../fig/stackedBar1.png)
 >
-> * You can use the `.unstack()` method to transform grouped data into columns
-> for each plotting.  Try running `.unstack()` on some DataFrames above and see
-> what it yields.
+> *
 >
 > Start by transforming the grouped data (by site and sex) into an unstacked layout, then create
 > a stacked plot.
@@ -711,4 +713,3 @@ total_count.plot(kind='bar');
 [spreadsheet-lesson5]: http://www.datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data
 
 {% include links.md %}
-

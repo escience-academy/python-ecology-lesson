@@ -140,9 +140,13 @@ new_output = pd.read_csv('data_output/out.csv', keep_default_na=False, na_values
 > ## Challenge - Combine Data
 >
 > In the data folder, there are two survey data files: `surveys2001.csv` and
-> `surveys2002.csv`. Read the data into Python and combine the files to make one
-> new data frame. Create a plot of average plot weight by year grouped by sex.
-> Export your results as a CSV and make sure it reads back into Python properly.
+> `surveys2002.csv`.
+> 1. Read the data into Python and combine the files to make one
+> new data frame.
+> 2. Create a stacked bar plot, with the average weight on the y-axis and the year on the x-axis. Use stacked bars grouped by sex.
+> 3. Export the combined dataframe as a CSV and make sure it reads back into Python properly.
+>
+> Hint: Remember you can use the `.unstack()` method to transform grouped data into columns for each plotting.
 {: .challenge}
 
 # Joining DataFrames
@@ -400,10 +404,8 @@ The pandas `merge` function supports two other join types:
 
 > ## Challenge - Distributions
 > Create a new DataFrame by joining the contents of the `surveys.csv` and
-> `species.csv` tables. Then calculate and plot the distribution of:
->
-> 1. taxa by plot
-> 2. taxa by sex by plot
+> `species.csv` tables. Then calculate and plot for each plot_id, the distribution
+> of the number of observations belonging to the different taxa.
 {: .challenge}
 
 > ## Challenge - Diversity Index

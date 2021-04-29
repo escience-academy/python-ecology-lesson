@@ -366,10 +366,20 @@ results.
 
 > ## Counting
 > Count the number of missing values per column.
->
-> > ## Hint
-> > The method `.count()` gives you the number of non-NA observations per column.
-> > Try looking to the `.isnull()` method.
+> Hint: the method `.count()` gives you the number of non-NA observations per column.
+> You can also look to the `.isnull()` and `.sum()` methods.
+> > ## Solution
+> > Since `count` gives the number of non-null values, the number of null values can be computed:
+> > ~~~
+> > len(surveys_df) - surveys_df.count()
+> > ~~~
+> > {: .language-python}
+> >
+> > Because booleans are treated as 0 or 1 in a `sum`, we can also use the `isnull()` method:
+> > ~~~
+> > surveys_df.isnull().sum()
+> > ~~~
+> > {: .language-python}
 > {: .solution}
 {: .challenge}
 
@@ -423,4 +433,3 @@ What we've learned:
 + How to use `to_csv` to write manipulated data to a file.
 
 {% include links.md %}
-
