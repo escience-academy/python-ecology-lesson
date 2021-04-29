@@ -143,7 +143,7 @@ new_output = pd.read_csv('data_output/out.csv', keep_default_na=False, na_values
 > `surveys2002.csv`.
 > 1. Read the data into Python and combine the files to make one
 > new data frame.
-> 2. Create a bar plot of average weight by year and by sex.
+> 2. Create a stacked bar plot, with the average weight on the y-axis and the year on the x-axis. Use stacked bars grouped by sex.
 > 3. Export the combined dataframe as a CSV and make sure it reads back into Python properly.
 >
 > Hint: Remember you can use the `.unstack()` method to transform grouped data into columns for each plotting.
